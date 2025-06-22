@@ -1,1 +1,6 @@
 Simple counter argument that "you must have a single version of effect installed". This is false. As long as module resolution is respected, it's perfectly fine to have multiple versions installed, as evident by this simple script
+
+```
+pnpm i
+pnpm start
+```
