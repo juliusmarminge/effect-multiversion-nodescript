@@ -1,0 +1,54 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      effect-3-14:
+        specifier: npm:effect@~3.14
+        version: effect@3.14.22
+      effect-3-15:
+        specifier: npm:effect@~3.15
+        version: effect@3.15.5
+
+packages:
+
+  '@standard-schema/spec@1.0.0':
+    resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
+
+  effect@3.14.22:
+    resolution: {integrity: sha512-dEAC2+WFzOM19N3/3MrZ545pPb3Bla/AjHLHHCEe4Yq5fSo+GcC30lPN0sopeZo7J0fhW7Qq2Xp0hoQoxDDEDg==}
+
+  effect@3.15.5:
+    resolution: {integrity: sha512-9IA4xu9niyDIuWkS/whroDj3u2nbccw+9fQ9sKCzaEtuwTV5SSoNvp8XOozeSF/0Nwnh+mx2+ShYYgSueOTmMw==}
+
+  fast-check@3.23.2:
+    resolution: {integrity: sha512-h5+1OzzfCC3Ef7VbtKdcv7zsstUQwUDlYpUTvjeUsJAssPgLn7QzbboPtL5ro04Mq0rPOsMzl7q5hIbRs2wD1A==}
+    engines: {node: '>=8.0.0'}
+
+  pure-rand@6.1.0:
+    resolution: {integrity: sha512-bVWawvoZoBYpp6yIoQtQXHZjmz35RSVHnUOTefl8Vcjr8snTPY1wnpSPMWekcFwbxI6gtmT7rSYPFvz71ldiOA==}
+
+snapshots:
+
+  '@standard-schema/spec@1.0.0': {}
+
+  effect@3.14.22:
+    dependencies:
+      '@standard-schema/spec': 1.0.0
+      fast-check: 3.23.2
+
+  effect@3.15.5:
+    dependencies:
+      '@standard-schema/spec': 1.0.0
+      fast-check: 3.23.2
+
+  fast-check@3.23.2:
+    dependencies:
+      pure-rand: 6.1.0
+
+  pure-rand@6.1.0: {}

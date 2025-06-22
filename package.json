@@ -1,0 +1,12 @@
+{
+  "name": "effect-multiversion-nodescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-strip-types main.ts"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "effect-3-14": "npm:effect@~3.14",
+    "effect-3-15": "npm:effect@~3.15"
+  }
+}
